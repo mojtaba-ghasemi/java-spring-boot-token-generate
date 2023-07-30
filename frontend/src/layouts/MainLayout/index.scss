@@ -1,0 +1,79 @@
+.MainLayout {
+  .sidebar-section {
+    .sidebar {
+      height: 150vh;
+      border-radius: 0 1rem 1rem 0;
+      transition: transform 250ms;
+      .toggle {
+        top: 60px;
+        right: -25px;
+        z-index: 11;
+        .dark {
+          transform: rotateZ(-90deg) scale(0.7);
+        }
+        .light {
+          transform: rotateZ(-90deg);
+        }
+      }
+      .nav-items {
+        a {
+          border-left-color: transparent !important;
+          &.active {
+            + a {
+              border-color: transparent !important;
+            }
+          }
+          &:not(.active) {
+            border-right-color: transparent !important;
+            border-bottom-color: transparent !important;
+            &:first-child {
+              border-top-color: transparent !important;
+            }
+          }
+        }
+      }
+    }
+    .profile-img-section {
+      i.bi-person {
+        font-size: 2.5rem;
+      }
+      i.bi-gear {
+        width: 25px;
+        height: 25px;
+        z-index: 1;
+      }
+    }
+  }
+  .main-section {
+    // height: 100vh;
+  }
+}
+@media (max-width: 992px) {
+  .MainLayout {
+    .sidebar-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      pointer-events: none;
+      .sidebar {
+        width: 300px;
+        transform: translateX(-100%);
+        .toggle {
+          font-size: 45px;
+          transform: rotateZ(180deg);
+          pointer-events: all;
+        }
+      }
+      &.active {
+        pointer-events: all;
+        .sidebar {
+          transform: translateX(0);
+          .toggle {
+            transform: rotateZ(0deg);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "search": "Search",
+  "sign-in": {
+    "h4": "Sign In",
+    "inputs": ["E-mail", "Password"],
+    "button": "Login",
+    "test-user-pass-invalid": "Please set Username: admin and Password: admin for test"
+  },
+  "home": {
+    "header": "App Rules",
+    "rules": [
+      "Generate and validate token application  uses Lunh algorithm.",
+      "Token has a format of XXXX-XXXX-XXXX-XXXX, and consists of the 0-9 digits.",
+      "User is able to choose which digits are available for token generation.",
+      "Token generator/validator uses Lunh algorithm."
+    ],
+    "developer":"Developer: Mojtaba Ghasemi",
+    "version":"version: 1.0.0",
+    "date":"Date: 2023 28 July"
+  },
+  "generate-token": {
+    "h1": "Generate Token",
+    "change-picture": "Change picture",
+    "delete-picture": "Delete picture",
+    "inputs": ["Available Token  EX: 2,3,6,8", "Token"],
+    "submit": "Generate Token"
+  },
+  "validate-token": {
+    "h1": "Validate Token",
+    "change-picture": "Change picture",
+    "delete-picture": "Delete picture",
+    "inputs": ["Token  EX: 1519-5991-1191-5511", "Token"],
+    "submit": "Generate Token"
+  },
+  "nav-items": [
+    "Home",
+    "Generate Token",
+    "Validate Token"
+  ],
+  "messages": {
+    "fields-empty" : "Please fill boxes",
+    "200": "Your request is done",
+    "207": "Your invitation has been sent successfully",
+    "no-data-to-show" : "There are no Data to Show"
+  },
+  "error": {
+  },
+  "general": {
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "suspend": "Suspend",
+    "approve": "Approve",
+    "decline": "Decline",
+    "send": "Send"
+  }
+}
